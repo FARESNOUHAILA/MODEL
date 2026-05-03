@@ -5,8 +5,8 @@ import pickle
 # --- CHARGEMENT DU MODÈLE ---
 # Assurez-vous que le chemin est correct pour votre machine
 try:
-    with open('/Users/faresnouhaila/Desktop/cours master /ML/LABS/10_Labs_deploiement/Streamlit/app build/modeliris6.pkl', 'rb') as f:
-        model = pickle.load(f)
+    with open('modeliris6.pkl', 'rb') as f:
+    model = pickle.load(f)
 except FileNotFoundError:
     st.error("Le fichier modèle 'modeliris6.pkl' n'a pas été trouvé. Vérifiez le chemin.")
 

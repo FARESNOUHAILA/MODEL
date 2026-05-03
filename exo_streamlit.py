@@ -6,7 +6,7 @@ import pickle
 # Assurez-vous que le chemin est correct pour votre machine
 try:
     with open('modeliris6.pkl', 'rb') as f:
-    model = pickle.load(f)
+        model = pickle.load(f)
 except FileNotFoundError:
     st.error("Le fichier modèle 'modeliris6.pkl' n'a pas été trouvé. Vérifiez le chemin.")
 
